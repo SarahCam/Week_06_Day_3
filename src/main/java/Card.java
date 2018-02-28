@@ -19,4 +19,10 @@ public class Card {
     public ValueType getValue(){
         return this.value;
     }
+
+    // GETTER: Method to get the actual value (key:value pair) of the 'value' enum:
+    // e.g. if the key:value is ACE(1), then return the value '1'
+    public int getValueValue(){
+        return this.value.getEnumValue();
+    }
 }

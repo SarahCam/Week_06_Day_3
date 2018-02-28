@@ -21,4 +21,10 @@ public class CardTest {
     public void canGetValue(){
         assertEquals(ValueType.ACE, card.getValue());
     }
+
+    @Test
+    public void canGetValueValue(){
+        assertEquals(1, card.getValueValue());
+    }
+
 }
