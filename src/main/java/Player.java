@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Player {
 
     // INSTANCE VARIABLES:
@@ -13,5 +15,10 @@ public class Player {
     // GETTER:
     public String getName(){
         return this.name;
+    }
+
+    // GETTER:
+    public Hand getHand(){
+        return this.hand;
     }
 }
