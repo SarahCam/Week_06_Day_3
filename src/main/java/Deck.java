@@ -28,4 +28,9 @@ public class Deck {
         }
     }
 
+    // Method to *remove* the top card from the deck:
+    public Card deal(){
+        return this.cards.remove(0);
+    }
+
 }

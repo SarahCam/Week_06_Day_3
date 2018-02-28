@@ -34,4 +34,13 @@ public class DeckTest {
         assertEquals(ValueType.KING, lastCard.getValue());
     }
 
+    @Test
+    public void canDeal___UNSHUFFLED_DECK_OF_CARDS(){
+        deck.populate();
+        Card card = deck.deal();
+        assertEquals(SuitType.HEARTS, card.getSuit());
+        assertEquals(ValueType.ACE, card.getValue());
+
+    }
+
 }
