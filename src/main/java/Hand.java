@@ -14,4 +14,9 @@ public class Hand {
     public ArrayList<Card> getCards(){
         return this.cards;
     }
+
+    // Method to add a card to the Hand instance's cards ArrayList:
+    public void addCard(Card card){
+        this.cards.add(card);
+    }
 }

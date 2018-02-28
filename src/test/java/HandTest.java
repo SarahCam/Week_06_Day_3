@@ -19,9 +19,13 @@ public class HandTest {
         assertEquals(0, hand.getCards().size());
     }
 
-//    @Test
-//    public void canAddCard(){
-//        hand.addCard(card);
-//        assertEquals(1, hand.getCards().size());
-//    }
+    @Test
+    public void canAddCard(){
+        hand.addCard(card);
+        assertEquals(1, hand.getCards().size());
+        Card firstCard = hand.getCards().get(0);
+        assertEquals(SuitType.CLUBS, firstCard.getSuit());
+        assertEquals(ValueType.TWO, firstCard.getValue());
+
+    }
 }
