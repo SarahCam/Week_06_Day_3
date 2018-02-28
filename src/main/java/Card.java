@@ -10,7 +10,13 @@ public class Card {
         this.value = value;
     }
 
+    // Method to expose the private Card 'suit' property to other classes:
     public SuitType getSuit(){
         return this.suit;
+    }
+
+    // Method to expose the private Card 'value' property to other classes:
+    public ValueType getValue(){
+        return this.value;
     }
 }
