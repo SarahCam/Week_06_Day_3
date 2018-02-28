@@ -32,9 +32,10 @@ public class GameTest {
         assertEquals(0, game.getDeck().getCards().size());
     }
 
-//    @Test
-//    public void canPopulateGameDeck(){
-//        game.getDeck().populate();
-//    }
+    @Test
+    public void canPopulateGameDeck(){
+        game.getDeck().populate();
+        assertEquals(52, game.getDeck().getCards().size());
+    }
 
 }
