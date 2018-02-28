@@ -27,4 +27,14 @@ public class GameTest {
         assertEquals(2, game.getPlayers().size());
     }
 
+    @Test
+    public void canGetDeck___EMPTY_DECK(){
+        assertEquals(0, game.getDeck().getCards().size());
+    }
+
+//    @Test
+//    public void canPopulateGameDeck(){
+//        game.getDeck().populate();
+//    }
+
 }

@@ -17,6 +17,11 @@ public class Game {
         return this.players;
     }
 
+    // GETTER:
+    public Deck getDeck(){
+        return this.deck;
+    }
+
     // Method to add a new player to the game:
     public void addPlayer(Player player){
         this.players.add(player);
