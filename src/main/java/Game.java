@@ -27,4 +27,19 @@ public class Game {
         this.players.add(player);
     }
 
+    // Method to play highest card game:
+    public Player playHighestCard(){
+        int maxHand = 0;                            // Initialize maxHand
+        Player winner = new Player("Nobody");       // Ghost player!! with no cards, to compare to...
+        this.deck.populate();                       // Populate the deck with 52 cards
+        for(Player player : this.players){          // For each player:
+            Card card = this.deck.deal();           // Remove a card from the top of the deck
+            player.getHand().addCard(card);         // Add that card to that player's hand
+            if (player.getHand().sumCards() > maxHand){
+                winner = player;
+            }
+        }
+        return winner;
+    }
+
 }

@@ -1,12 +1,15 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class GameTest {
 
     Game game;
     Player player1, player2;
+    ArrayList<Player> players;
 
     @Before
     public void before(){
@@ -36,6 +39,15 @@ public class GameTest {
     public void canPopulateGameDeck(){
         game.getDeck().populate();
         assertEquals(52, game.getDeck().getCards().size());
+    }
+
+    @Test
+    public void canPlayHighestCard(){
+        game.addPlayer(player1);
+        game.addPlayer(player2);
+        Player winner = game.playHighestCard();
+        assertEquals("Jamie", winner.getName());
+        assertEquals(2, winner.getHand().sumCards());
     }
 
 }
