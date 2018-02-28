@@ -10,4 +10,8 @@ public class Deck {
         this.cards = new ArrayList<Card>();
     }
 
+    public ArrayList<Card> getCards(){
+        return this.cards;
+    }
+
 }
