@@ -9,4 +9,9 @@ public class Player {
         this.name = name;
         this.hand = new Hand();
     }
+
+    // GETTER:
+    public String getName(){
+        return this.name;
+    }
 }
