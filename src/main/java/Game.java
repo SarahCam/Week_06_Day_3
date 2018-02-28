@@ -6,10 +6,15 @@ public class Game {
     private ArrayList<Player> players;
     private Deck deck;
 
-    //SETTER: CONSTRUCTOR:
+    // SETTER: CONSTRUCTOR:
     public Game(){
-        players = new ArrayList<Player>();
-        deck = new Deck();
+        this.players = new ArrayList<Player>();
+        this.deck = new Deck();
+    }
+
+    // GETTER:
+    public ArrayList<Player> getPlayers(){
+        return this.players;
     }
 
 }
