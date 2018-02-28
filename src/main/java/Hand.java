@@ -19,4 +19,14 @@ public class Hand {
     public void addCard(Card card){
         this.cards.add(card);
     }
+
+    // Method to sum card values in the Hand instance:
+    // We need to use our method to get the enumValue of our ValueType value keys here:
+    public int sumCards(){
+        int total = 0;
+        for(Card card : this.cards){
+            total += card.getValueValue();
+        }
+        return total;
+    }
 }
